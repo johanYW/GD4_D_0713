@@ -1,10 +1,11 @@
 <?php
     session_start();
-    if(!$_SESSION['isLogin']){
+    if(!isset($_SESSION['isLogin'], $_SESSION["email"])){
         header("location: ../page/loginPage.php");
     }else{
         include('../db.php');
     }
+
     echo'
     <!Doctype html>
     <html lang="en">
@@ -19,7 +20,7 @@
             EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
             crossorigin="anonymous">
             <link rel="stylesheet" href="./style.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link 
@@ -69,13 +70,17 @@
                         >Dashboard</a>
                         </div>
                     <div class="content-menu " >
-                    <i class="fa fa-film"></i>
-                    <a href="./listMoviesPage.php" style="font weight:600">List Movie</a>
+                        <i class="fa fa-film"></i>
+                        <a href="./listMoviesPage.php" style="font weight:600">List Movie</a>
                     </div>
-                <div class="content-menu " >
-                <i class="fa fa-sign-out"></i>
-                <a href="../process/logoutProcess.php" style="font weight:600">&nbspLogout</a>
-                </div>
+                    <div class="content-menu " >
+                        <i class="fa fa-sign-out"></i>
+                        <a href="../process/logoutProcess.php" style="font weight:600">Logout</a>
+                    </div>
+                    <div class="content-menu">
+                        <i class="fa-regular fa-user"></i>
+                        <a href="../Page/ProfilPage.php" style="font weight:600">Profil</a>
+                    </div>
                 <hr>
             </div>
         </div>

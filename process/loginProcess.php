@@ -18,6 +18,7 @@
                 session_start();
 
                 $_SESSION['isLogin'] = true;
+                $_SESSION["email"] = $email;
                 $_SESSION['user'] = $user;
                 echo
                 '<script>
