@@ -23,7 +23,7 @@ include '../component/sidebar.php'
     <hr>
 
     <?php
-    $query = mysqli_query($con, "SELECT * FROM users WHERE email='{$_SESSION["email"]}'") or
+    $query = mysqli_query($con, "SELECT * FROM users WHERE  ") or
     die(mysqli_error($con));
     if(mysqli_num_rows($query)>0){
         while($dataProfil = mysqli_fetch_assoc($query)){

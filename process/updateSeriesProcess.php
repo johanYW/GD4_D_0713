@@ -16,6 +16,7 @@
         $query = mysqli_query($con, "UPDATE  series SET name='$name', genre='$genre', realese='$realese', season='$season', episode='$episode' ,synopsis='$synopsis' WHERE id = '$id'") or
         die(mysqli_error($con));
 
+
             if($query){
                 echo
                 '<script>

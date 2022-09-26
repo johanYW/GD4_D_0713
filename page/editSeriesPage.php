@@ -22,6 +22,7 @@ include '../component/sidebar.php'
     ?>
     <div class="card-body">
         <form action="../process/updateSeriesProcess.php" method="POST">
+            <input type="hidden" name="id" value="<?php echo $_GET['id'];?>">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
                 <input class="form-control" id="name" name="name"  value="<?php echo $dataSeries['name']; ?>">
