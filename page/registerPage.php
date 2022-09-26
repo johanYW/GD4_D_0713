@@ -48,7 +48,7 @@
                                         <input type="password" id="password" name="password" >
                                     </div>
                                     <div class="d-grip gap-2">
-                                        <button type="submut" class="btn btn-primary" name="register">Register</button>
+                                        <button type="submit" class="btn btn-primary" name="register">Register</button>
                                     </div>
                                 </form>
                                 <p class="mt-2 mb-0">Have an account? <a

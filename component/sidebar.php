@@ -65,22 +65,28 @@
                 <hr>
                     <div class="menu">
                         <div class="content-menu" >
-                        <i class="fa fa-dashboard"></i>
-                        <a href="./dashboardPage.php" style="font-weight:600" 
-                        >Dashboard</a>
+                            <i class="fa fa-dashboard"></i>
+                            <a href="./dashboardPage.php" style="font-weight:600" 
+                            >Dashboard</a>
                         </div>
-                    <div class="content-menu " >
-                        <i class="fa fa-film"></i>
-                        <a href="./listMoviesPage.php" style="font weight:600">List Movie</a>
-                    </div>
-                    <div class="content-menu " >
-                        <i class="fa fa-sign-out"></i>
-                        <a href="../process/logoutProcess.php" style="font weight:600">Logout</a>
-                    </div>
-                    <div class="content-menu">
-                        <i class="fa-regular fa-user"></i>
-                        <a href="../Page/ProfilPage.php" style="font weight:600">Profil</a>
-                    </div>
+                        <div class="content-menu " >
+                            <i class="fa fa-film"></i>
+                            <a href="./listMoviesPage.php" style="font weight:600">List Movie</a>
+                        </div>
+                        <div class="content-menu">
+                            <i class="fa-solid fa-ticket"></i>
+                            <a href="../Page/listSeriesPage.php" style="font weight:600">List Series</a>
+                        </div>
+                        
+                        <div class="content-menu">
+                            <i class="fa-regular fa-user"></i>
+                            <a href="../Page/ProfilPage.php" style="font weight:600">Profil</a>
+                        </div>
+                        <div class="content-menu " >
+                            <i class="fa fa-sign-out"></i>
+                            <a href="../process/logoutProcess.php" style="font weight:600">Logout</a>
+                        </div>
+                    
                 <hr>
             </div>
         </div>
